@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Basketball Cards App</title>
+
+	<!-- source in javascript files -->
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/CardsController.js"></script>
+
+	<!-- source in css files -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+
 </head>
-<body>
+<body ng-app="cardsApp">
+	
+
+	<div class="main" ng-controller="CardsController as cardsCtrl">
+		
+		<div class="card" ng-repeat="card in cardsCtrl.players">
+			<img ng-src="images/{{card.image}}">
+		</div>
+
+	</div>
+
 
 </body>
 </html>

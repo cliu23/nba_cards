@@ -1,0 +1,28 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+.main {
+	width: 67.5%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.main img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.card {
+	padding: 10px;
+	margin: 10px;
+	width: 200px;
+	height: 300px;
+	border: 1px solid white;
+	position: relative;
+	float: left;
+}
